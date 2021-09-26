@@ -1,0 +1,229 @@
+\documentclass[]{resume-openfont}
+
+\pagestyle{fancy}
+\resetHeaderAndFooter
+%--------------------------------------------------------------
+% Convenience command - make it easy to fill template
+
+% Create job position command. Parameters: company, position, location, when
+\newcommand{\resumeHeading}[4]{\runsubsection{\uppercase{#1}}\descript{ | #2}\hfill\location{#3 | #4}\fakeNewLine}
+
+% Create education heading. Parameters: Name, degree, location, when
+\newcommand{\educationHeading}[4]{\runsubsection{#1}\hspace*{\fill}  \location{#3 | #4}\\
+\descript{#2}\fakeNewLine}
+
+% Parameters: courses
+\newcommand{\courseWork}[1]{\textbf{Coursework:} #1}
+
+% Parameters: courses
+\newcommand{\teacherAssistant}[1]{\textbf{Teacher Assistant (TA):} #1}
+ 
+%--------------------------------------------------------------
+\begin{document}
+
+%--------------------------------------------------------------
+%     Profile
+%--------------------------------------------------------------
+\newcommand{\yourName}{Manan Sharma}
+\newcommand{\yourEmail}{manan180796@gmail.com}
+\newcommand{\yourPhone}{+919711306818}
+\newcommand{\githubUserName}{sageprogrammer}
+\newcommand{\linkedInUserName}{manan-sh}
+
+% \alignProfileTable
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%     \ralewayBold{\href{\yourWebsite}{\Large \yourName}} & 
+%     Email : \href{mailto:\yourEmail}{\yourEmail}
+%     \\
+%     \href{https://github.com/\githubUserName}{GitHub://\githubUserName} & 
+%     Mobile : \yourPhone
+%     \\
+%     \href{https://www.linkedin.com/in/\linkedInUserName}{LinkedIn://\linkedInUserName} & Website : \href{\yourWebsite}{abdullaharif.tech}
+%     \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape \yourName} \\ \vspace{1pt}
+    \small \yourPhone $|$ \href{mailto:\yourEmail}{\underline{\yourEmail}} $|$ 
+    \href{https://linkedin.com/in/\linkedInUserName}{\underline{linkedIn/\linkedInUserName}} $|$
+    \href{https://github.com/\githubUserName}{\underline{github/\githubUserName}}
+\end{center}
+
+
+%--------------------------------------------------------------
+%     Experience
+%--------------------------------------------------------------
+\section{Work Experience}
+\resumeHeading{Summer of BitCoin}{Open Source}{}{Jul 2021 – Current}
+\begin{tightemize}
+    \item Implemented Taproot support for NBXplorer \& BTCPayServer, which is the next major upgrade after SegWit.
+    \item Used ASP.Net framework with xunit testing.
+    \item Used Dockers for stable testing envroments.
+    \item Learned \& Implemented different BlockChain \& Signature concepts
+\end{tightemize}
+\sectionsep
+\resumeHeading{Microsoft Research \& Development}{Data Science Intern}{Hyderabad, India}{May 2019 – Jul 2019}
+\begin{tightemize}q
+    \item Developed an Automated Question Answering System for Local Search in Bing.
+    \item Trained our own Question \& Answer embeddings using BERT.
+    \item Matched the Question and their Answers using closest embeddings.
+\end{tightemize}
+\sectionsep
+\resumeHeading{Fabulyst}{Intern}{}{Aug 2016 - Nov 2016}
+\begin{tightemize}
+    \item Scrap different fashion items and their details from on-line resources and used MongoDB for storage. 
+    \item Built an annotation tool for annotating tags for all the scraped items using AngularJS.
+\end{tightemize}
+\sectionsep
+
+
+%--------------------------------------------------------------
+%     Education
+%--------------------------------------------------------------
+\section{Education}
+% Swap degree and school if your school is reputable
+\educationHeading{International Institute of Information Technology, Hyderabad}{BTech \& MS By Research in Computer Science}{Hyderabad, India}{Jul 2016 - Jun 2022}
+\sectionsep
+
+\resumeHeading{Research}{}{}{Aug 2020 - Current}
+\begin{tightemize}
+    \item Working on Knowledge Completion in Knowledge Graph
+    \item Knowledge Graph Relation extraction using Adversarial Techniques.
+\end{tightemize}
+\sectionsep
+\resumeHeading{Teaching Assistant}{Topics in Applied Optimization}{}{Aug 2018-Nov 2018}
+
+\sectionsep
+\resumeHeading{Center For Visual Information Technology}{Research Assistant}{}{Aug 2016 - Nov 2019}
+\begin{tightemize}
+    \item Researched under Dr. Avinash Sharma.
+    \item Reconstructing a 3D dynamic model via video feeds coming a uncalibrated camera setup.
+\end{tightemize}
+\educationHeading{Jaypee Institute of Information Technology, Noida}{BTech \& MTech in Computer Science}{Hyderabad, India}{Jul 2014 - Jun 2016}
+\sectionsep
+\sectionsep
+\courseWork{Data Structures and Algorithms; Operating Systems; Complexity and Advanced Algorithms; Digital Image Processing; Statistical Methods in AI; Computer Vision; Optimization Methods; Introduction to Parallel Scientific Computing;Database Systems;Linear Algebra; Distributing Trust \& Blockchains; Compilers; Distributed Systems}
+\sectionsep
+
+%--------------------------------------------------------------
+%     Achievments
+%--------------------------------------------------------------
+\section{Achivements}
+\resumeHeading{Kickstart}{}{}{}
+\begin{tightemize}
+    \item Ranked 100 in Google Kick Start Round D 2019 in ~10000
+    \item Ranked 581 in Google Kick Start Round D 2020 in ~10000
+    \item Ranked 862 in Google Kick Start Round D 2021 in ~10000
+\end{tightemize}
+\resumeHeading{CodeChef}{}{}{}
+\begin{tightemize}
+    \item \textbf{Global Rank 1} in May Challenge 2021
+\end{tightemize}
+\sectionsep
+\sectionsep
+\resumeHeading{ACM-ICPC}{}{}{}
+\begin{tightemize}
+    \item 2017:Ranked 42 all over India in the On-site Coding Round at Asia Chennai Regional
+    \item 2016:Ranked 99 all over India in the On-site Coding Round at Asia Amritapuri Regionals
+\end{tightemize}
+\resumeHeading{Miscellaneous}{}{}{}
+\begin{tightemize}
+    \item Qualified for Code Jam Round 2
+    \item Qualified for HackerCup Round 2
+\end{tightemize}
+
+%--------------------------------------------------------------
+%     Projects
+%--------------------------------------------------------------
+\section{Projects}
+\Project{Ublas Matrix Library with Expresion Templates}{https://github.com/sageprogrammer/ublas/tree/develop/include/boost/numeric/ublas/matrix}
+\descript{ C++, UBLAS, Linear Algebra}\\
+\begin{tightemize}
+    \item Created a Matrix Library in C++ using expression templates for compile time evaluation.
+    \item The operations were written to support slicing a splicing without any verbose syntax.
+\end{tightemize}
+
+\Project{DECAFF Compiler}{https://github.com/Compilers-Monsoon2018-IIITH/decaff-compiler-manan180796}
+\descript{C++,LLVM,YACC}\\
+\begin{tightemize}
+    \item Build a Compiler for a turing complete programming language Decaff.
+    \item We used Bison and Yacc for parsing the language.
+    \item To make the project modularized we used Visitor Patterns and many more OOPs techniques.
+\end{tightemize}
+\sectionsep
+  
+\Project{Parallel Image Compression using PCA}{https://github.comsageprogrammer/PCA-Image-Compression}
+\descript{C++, OpenMP}\hfill \\
+\begin{tightemize}
+    \item Compress a given image using PCA.
+    \item Create our own algorithm to compress image using PCA.
+    \item Accelerate the compression time by parallizing the algorithm using openMP.
+\end{tightemize}
+\sectionsep
+
+\Project{Russian Tweet Troll Analysis}{https://github.com/AakashKT/PSOSMProject}
+\descript{Python, NLP} \\
+\begin{tightemize}
+    \item Build a Tweet analyzer if it is a troll or not.
+    \item Trained our BERT model using russian troll dataset .
+    \item Developed a frontend website for easy presentation
+\end{tightemize}
+\sectionsep
+
+
+\Project{Student Teacher Transfer Learning}{https://github.com/sageprogrammer/student-teacher-transfer-learning}
+\descript{Python, Pytorch, Tranfer Learning} \\
+\begin{tightemize}
+    \item Transfer the knowledge learned by very deep Neural Network to a shallower Neural Network.
+    \item Train the original deep Neural Network on the original data.
+    \item Make the learning faster for the smaller neural network via providing the soft targets.
+\end{tightemize}
+\sectionsep
+
+\Project{Image Uncrop}{ https://github.com/sageprogrammer/CV-project }
+\descript{Python, MRF, Computer Vision}\\
+\begin{tightemize}
+    \item Extend a given image using existing wild images on the internet.
+    \item The images are positioned using Structure from Motion.
+    \item The images are then stitched together seamlessly using Markovian Random Fields.
+\end{tightemize}
+ 
+\sectionsep
+
+\Project{UNIX/Linux Shell}{https://github.com/sageprogrammer/Custom-Shell}
+\descript{ C, Posix, OS}\\
+
+Create a shell to simulate built-in commands,piping ,I/O redirection \& signals.
+\sectionsep
+
+\Project{Graphics}{}
+\descript{ C++, JS, OpenGL, WebGL}\\
+\begin{tightemize}
+    \item Create a Bloxorz like game using OpenGL.
+    \item Create a Fish Aquarium Simulator using WebGL.
+    \item Created our own 3D movie.
+\end{tightemize}
+\sectionsep
+
+
+%--------------------------------------------------------------
+%     Skills
+%--------------------------------------------------------------
+\section{Skills}
+\begin{resumeSkillList}
+    \singleItem{Languages:}{Java, C++, C, Python, C\#, PHP, Bash, C, SQL}
+    \\
+    \singleItem{Web Development:}{AngularJS, JavaScript, TypeScript, HTML/CSS}
+    \\
+    \singleItem{Technology:}{Git, Docker, Unity,  \LaTeX, MongoDB, Neo4j, OpenMP, OpenGL, WebGL}
+\end{resumeSkillList}
+
+ % A more concise alternate 
+% \begin{resumeSkillList}
+%     \doubleItem{Languages:}{Java, C++, Python, C\#, PHP, Prolog, Bash, C, Racket}%
+%     {Databases:}{SQL, MongoDB, Neo4j, DynamoDB}
+%     \\
+%     \doubleItem{Web Development:}{JavaScript, TypeScript, React, HTML/CSS}
+%     {Technology:}{Git, AWS, GCP, Azure, Docker, \LaTeX}%
+% \end{resumeSkillList}
+\end{document}
