@@ -24,6 +24,8 @@
 % Using tables like the profile section
 \RequirePackage{tabularx}
 % Used for the link symbol
+\RequirePackage{fontspec}
+\defaultfontfeatures{Path = /usr/share/texmf-dist/fonts/opentype/public/fontawesome/}
 \RequirePackage{fontawesome}
 % Set up font 
 \RequirePackage{lato-font}
